@@ -26,7 +26,7 @@ void main() {
       expect(
           NanoAccounts.createAccount(
               NanoAccountType.BANANO, NanoKeys.createPublicKey(privKey)),
-          'ban_1p95xji1g5gou8auj8h6qcuezpdpcyoqmawao6mpwj4p44939oouoturkggc');
+          'bcb_1p95xji1g5gou8auj8h6qcuezpdpcyoqmawao6mpwj4p44939oouoturkggc');
       expect(
           NanoAccounts.createAccount(
               NanoAccountType.NANO, NanoKeys.createPublicKey(privKey)),
@@ -58,7 +58,7 @@ void main() {
       // Three valid accounts
       expect(
           NanoAccounts.isValid(NanoAccountType.BANANO,
-              'ban_1p95xji1g5gou8auj8h6qcuezpdpcyoqmawao6mpwj4p44939oouoturkggc'),
+              'bcb_1p95xji1g5gou8auj8h6qcuezpdpcyoqmawao6mpwj4p44939oouoturkggc'),
           true);
       expect(
           NanoAccounts.isValid(NanoAccountType.NANO,
@@ -71,12 +71,12 @@ void main() {
       // Invalid checksum
       expect(
           NanoAccounts.isValid(NanoAccountType.BANANO,
-              'ban_3zzzzzzzzzzzhw11111111111111111111111111111111111111spcronyu'),
+              'bcb_3zzzzzzzzzzzhw11111111111111111111111111111111111111spcronyu'),
           false);
       // Too short of length
       expect(
           NanoAccounts.isValid(NanoAccountType.BANANO,
-              'ban_1p95xji1g5gou8auj8h6qcuezpdpcyoqmawao6mpwj4p44939oouoturkg'),
+              'bcb_1p95xji1g5gou8auj8h6qcuezpdpcyoqmawao6mpwj4p44939oouoturkg'),
           false);
       // Invalid prefix
       expect(

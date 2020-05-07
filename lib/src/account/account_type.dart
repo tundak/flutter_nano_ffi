@@ -12,7 +12,7 @@ class NanoAccountType {
       case NANO:
         return "nano_";
       case BANANO:
-        return "ban_";
+        return "bcb_";
       default:
         return "nano_";
     }
