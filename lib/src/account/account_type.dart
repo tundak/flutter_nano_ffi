@@ -5,7 +5,7 @@ class NanoAccountType {
   static const String NANO_REGEX =
       r"(xrb|nano)(_)(1|3)[13456789abcdefghijkmnopqrstuwxyz]{59}";
   static const String BANANO_REGEX =
-      r"(ban)(_)(1|3)[13456789abcdefghijkmnopqrstuwxyz]{59}";
+      r"(bcb)(_)(1|3)[13456789abcdefghijkmnopqrstuwxyz]{59}";
 
   static String getPrefix(int type) {
     switch (type) {
