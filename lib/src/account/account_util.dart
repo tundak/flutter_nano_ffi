@@ -51,8 +51,8 @@ class NanoAccounts {
   }
 
   static String extractEncodedPublicKey(String account) {
-    return account.startsWith("nano_")
-        ? account.substring(5, 57)
+    return account.startsWith("bcb_")
+        ? account.substring(5, 56)
         : account.substring(4, 56);
   }
 
